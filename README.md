@@ -1,3 +1,3 @@
 # Portfolio
-:seedling:Portfolio:seedling:
+:seedling:Portfolio:seedling:  
 https://eunago.github.io/Portfolio/
