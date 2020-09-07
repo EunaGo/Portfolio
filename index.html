@@ -2,65 +2,18 @@
 <title>고은아의 Portfolio</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-    html,
-    body,
-    h1,
-    h2,
-    h3,
-    h4 {
-        font-family: "Lato", sans-serif
-    }
+<link rel="stylesheet" href="index.css">
 
-    .mySlides {
-        display: none
-    }
-
-    .w3-tag,
-    .fa {
-        cursor: pointer
-    }
-
-    .w3-tag {
-        height: 15px;
-        width: 15px;
-        padding: 0;
-        margin-top: 6px
-    }
-
-    .img-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        width: 100%;
-        font-family: 'Noto Sans KR', sans-serif;
-        font-weight: 600;
-        font-size: 4vw;
-    }
-
-    .img-content::after {
-        background-image: url(img/office_1920.jpg);
-        background-repeat: no-repeat;
-        background-size: cover; 
-        width: 100%;
-        height: 103vh;
-        content: "";
-        position: absolute;
-        z-index: -1;
-        opacity: 0.8;
-    }
-
-</style>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
 <script src="index.js"></script>
-<body>
 
+<body>
     <!-- Links (sit on top) -->
     <div class="w3-top">
         <div class="w3-row w3-large w3-light-grey">
@@ -85,39 +38,36 @@
 
         <!-- Slideshow -->
         <div class="w3-display-container">
-            <!-- <img src="img/office_1920.jpg" class="w3-opacity-min" style="width:100%"> -->
-            <div id="imgText" class="img-content">
-                <!-- <p>고은아의 포트폴리오입니다.</p> -->
-            </div>
+            <div id="imgText" class="img-content"></div>
         </div>
 
-                <!-- Grid -->
-                <div class="w3-row w3-container" id="about">
-                    <div class="w3-center w3-padding-64">
-                        <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">About Me</span>
-                    </div>
-                    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
-                        <h3>Design</h3>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                    </div>
+        <!-- about Grid -->
+        <div class="w3-row w3-container" id="about">
+            <div class="w3-center w3-padding-64">
+                <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">About Me</span>
+            </div>
+            <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
+                <h3>Design</h3>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            </div>
         
-                    <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
-                        <h3>Branding</h3>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                    </div>
+            <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
+                <h3>Branding</h3>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            </div>
         
-                    <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
-                        <h3>Consultation</h3>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                    </div>
+            <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
+                <h3>Consultation</h3>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            </div>
         
-                    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
-                        <h3>Promises</h3>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-                    </div>
-                </div>   
+            <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+                <h3>Promises</h3>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            </div>
+        </div>   
 
-            <!-- Grid -->
+        <!-- project Grid -->
         <div class="w3-row-padding" id="project">
             <div class="w3-center w3-padding-64">
                 <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Project</span>
@@ -125,11 +75,13 @@
 
             <div class="w3-third w3-margin-bottom">
                 <div class="w3-card-4">
-                    <img src="/w3images/team1.jpg" alt="John" style="width:100%">
+                    <img src="img/mangch-jsp.png" style="width:100%; height: 50%;">
                     <div class="w3-container">
-                        <h3>Jane Doe</h3>
-                        <p class="w3-opacity">CEO & Founder</p>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        <h3>우리동네 렌탈사이트 :: Jsp.ver</h3>
+                        <p class="w3-opacity">개발기간  [20.7.20~20.7.27]</p>
+                        <p> 우리동네 대여서비스를 Jsp로 구현<br>
+                            가까웃 동네 이웃들끼리 필요한 물건을 대여, 나눔할 수 있도록 <br>도와주는 매칭 서비스<br>
+                            #Jsp #MySql #MVC패턴</p>
                         <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
                     </div>
                 </div>
@@ -137,11 +89,13 @@
 
             <div class="w3-third w3-margin-bottom">
                 <div class="w3-card-4">
-                    <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
+                    <img src="img/mangch-spring.png" style="width:100%; height: 50%;">
                     <div class="w3-container">
-                        <h3>Mike Ross</h3>
-                        <p class="w3-opacity">Art Director</p>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        <h3>우리동네 렌탈사이트 :: Spring.ver</h3>
+                        <p class="w3-opacity">개발기간  [20.8.3~20.8.21]</p>
+                        <p> 우리동네 대여서비스를 Spring Framework 로구현<br>
+                            가까웃 동네 이웃들끼리 필요한 물건을 대여, 나눔할 수 있도록 <br>도와주는 매칭 서비스<br>
+                            #Spring #Mybatis #MySql #RestAPI</p>
                         <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
                     </div>
                 </div>
@@ -149,20 +103,18 @@
 
             <div class="w3-third w3-margin-bottom">
                 <div class="w3-card-4">
-                    <img src="/w3images/team3.jpg" alt="Jane" style="width:100%">
+                    <img src="img/cafeproject.png" style="width:100%; height: 50%;">
                     <div class="w3-container">
-                        <h3>John Doe</h3>
-                        <p class="w3-opacity">Designer</p>
-                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        <h3>Cafe Project :: kiosk</h3>
+                        <p class="w3-opacity">개발기간  [20.6.22~6.26]</p>
+                        <p> 카페의 키오스크를 모델링하여 구현<br><br>
+                            #HTML5 #CSS3 #js<br>
+                            #jQuery #bootstrap</p>
                         <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-     
 
         <!-- Contact -->
         <div class="w3-center w3-padding-64" id="contact">
@@ -182,17 +134,8 @@
     <!-- Footer -->
 
     <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
-        <h4>Footer</h4>
+        <h4>Thank you!</h4>
         <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-        <div class="w3-xlarge w3-section">
-            <i class="fa fa-facebook-official w3-hover-opacity"></i>
-            <i class="fa fa-instagram w3-hover-opacity"></i>
-            <i class="fa fa-snapchat w3-hover-opacity"></i>
-            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-            <i class="fa fa-twitter w3-hover-opacity"></i>
-            <i class="fa fa-linkedin w3-hover-opacity"></i>
-        </div>
-        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
     </footer>
 
 </body>
