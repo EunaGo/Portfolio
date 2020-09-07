@@ -1,31 +1,16 @@
-// Slideshow
-var slideIndex = 1;
-showDivs(slideIndex);
+$( document ).ready(function() {
+    var text = document.getElementById("imgText");
 
-function plusDivs(n) {
-    showDivs(slideIndex += n);
-}
+    var typewriter = new Typewriter(text, {
+        loop: false
+    });
 
-function currentDiv(n) {
-    showDivs(slideIndex = n);
-}
+    typewriter.typeString('안녕하세요. ')
+        .pauseFor(1800)
+        // .deleteAll()
+        .typeString('고은아의 포트폴리오입니다.')
+        .pauseFor(2500)
+        // .deleteChars(15)
+        .start();
 
-function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demodots");
-    if (n > x.length) {
-        slideIndex = 1
-    }
-    if (n < 1) {
-        slideIndex = x.length
-    };
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" w3-white", "");
-    }
-    x[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " w3-white";
-}
+});
