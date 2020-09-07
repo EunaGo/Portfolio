@@ -59,6 +59,7 @@
 </style>
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+<script src="index.js"></script>
 <script>
             $( document ).ready(function() {
             var text = document.getElementById("imgText");
@@ -213,42 +214,6 @@
         </div>
         <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
     </footer>
-
-
-    <script>
-        // Slideshow
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function currentDiv(n) {
-            showDivs(slideIndex = n);
-        }
-
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demodots");
-            if (n > x.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = x.length
-            };
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" w3-white", "");
-            }
-            x[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " w3-white";
-        }
-
-    </script>
 
 </body>
 
