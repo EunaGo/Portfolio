@@ -34,13 +34,49 @@
     }
 
     .img-content {
-        position: absolute;
-        transform: translate(35%, -230%);  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
         font-family: 'Noto Sans KR', sans-serif;
-        font-size: 5vw;
+        font-weight: 600;
+        font-size: 4vw;
+    }
+
+    .img-content::after {
+        background-image: url(img/office_1920.jpg);
+        background-repeat: no-repeat;
+        background-size: cover; 
+        width: 100%;
+        height: 103vh;
+        content: "";
+        position: absolute;
+        z-index: -1;
+        opacity: 0.8;
     }
 
 </style>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+<script>
+            $( document ).ready(function() {
+            var text = document.getElementById("imgText");
+ 
+            var typewriter = new Typewriter(text, {
+                loop: false
+            });
+ 
+            typewriter.typeString('안녕하세요. ')
+                .pauseFor(1800)
+                // .deleteAll()
+                .typeString('고은아의 포트폴리오입니다.')
+                .pauseFor(2500)
+                // .deleteChars(15)
+                .start();
+ 
+});
+</script>
 
 <body>
 
@@ -51,10 +87,10 @@
                 <a href="#" class="w3-button w3-block">Home</a>
             </div>
             <div class="w3-col s3">
-                <a href="#plans" class="w3-button w3-block">Plans</a>
+                <a href="#about" class="w3-button w3-block">About</a>
             </div>
             <div class="w3-col s3">
-                <a href="#about" class="w3-button w3-block">About</a>
+                <a href="#project" class="w3-button w3-block">Project</a>
             </div>
             <div class="w3-col s3">
                 <a href="#contact" class="w3-button w3-block">Contact</a>
@@ -65,111 +101,45 @@
     <!-- Content -->
     <div class="w3-content" style="max-width:2000px;margin-top:40px;margin-bottom:80px">
 
-        <!-- <div class="w3-panel">
-    <h1><b>MARKETING</b></h1>
-    <p>Template by w3.css</p>
-  </div> -->
 
         <!-- Slideshow -->
-   
-            <div class="w3-display-container">
-                <img src="img/office_1920.jpg" class="w3-opacity-min" style="width:100%">
-                <div class="img-content w3-animate-opacity">
-                    <p>고은아의 포트폴리오입니다.</p>
-                </div>
-            </div>
-
-
-
-        <!-- Grid -->
-        <div class="w3-row w3-container">
-            <div class="w3-center w3-padding-64">
-                <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">What We Offer</span>
-            </div>
-            <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
-                <h3>Design</h3>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-            </div>
-
-            <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
-                <h3>Branding</h3>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-            </div>
-
-            <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
-                <h3>Consultation</h3>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-            </div>
-
-            <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
-                <h3>Promises</h3>
-                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <div class="w3-display-container">
+            <!-- <img src="img/office_1920.jpg" class="w3-opacity-min" style="width:100%"> -->
+            <div id="imgText" class="img-content">
+                <!-- <p>고은아의 포트폴리오입니다.</p> -->
             </div>
         </div>
 
-        <!-- Grid -->
-        <div class="w3-row-padding" id="plans">
+                <!-- Grid -->
+                <div class="w3-row w3-container" id="about">
+                    <div class="w3-center w3-padding-64">
+                        <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">About Me</span>
+                    </div>
+                    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
+                        <h3>Design</h3>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    </div>
+        
+                    <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
+                        <h3>Branding</h3>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    </div>
+        
+                    <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
+                        <h3>Consultation</h3>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    </div>
+        
+                    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+                        <h3>Promises</h3>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    </div>
+                </div>   
+
+            <!-- Grid -->
+        <div class="w3-row-padding" id="project">
             <div class="w3-center w3-padding-64">
-                <h3>Pricing Plans</h3>
-                <p>Choose a pricing plan that fits your needs.</p>
-            </div>
-
-            <div class="w3-third w3-margin-bottom">
-                <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-                    <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
-                    <li class="w3-padding-16"><b>10GB</b> Storage</li>
-                    <li class="w3-padding-16"><b>10</b> Emails</li>
-                    <li class="w3-padding-16"><b>10</b> Domains</li>
-                    <li class="w3-padding-16"><b>Endless</b> Support</li>
-                    <li class="w3-padding-16">
-                        <h2 class="w3-wide">$ 10</h2>
-                        <span class="w3-opacity">per month</span>
-                    </li>
-                    <li class="w3-light-grey w3-padding-24">
-                        <button class="w3-button w3-green w3-padding-large">Sign Up</button>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="w3-third w3-margin-bottom">
-                <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-                    <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
-                    <li class="w3-padding-16"><b>25GB</b> Storage</li>
-                    <li class="w3-padding-16"><b>25</b> Emails</li>
-                    <li class="w3-padding-16"><b>25</b> Domains</li>
-                    <li class="w3-padding-16"><b>Endless</b> Support</li>
-                    <li class="w3-padding-16">
-                        <h2 class="w3-wide">$ 25</h2>
-                        <span class="w3-opacity">per month</span>
-                    </li>
-                    <li class="w3-light-grey w3-padding-24">
-                        <button class="w3-button w3-green w3-padding-large">Sign Up</button>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="w3-third w3-margin-bottom">
-                <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-                    <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
-                    <li class="w3-padding-16"><b>50GB</b> Storage</li>
-                    <li class="w3-padding-16"><b>50</b> Emails</li>
-                    <li class="w3-padding-16"><b>50</b> Domains</li>
-                    <li class="w3-padding-16"><b>Endless</b> Support</li>
-                    <li class="w3-padding-16">
-                        <h2 class="w3-wide">$ 50</h2>
-                        <span class="w3-opacity">per month</span>
-                    </li>
-                    <li class="w3-light-grey w3-padding-24">
-                        <button class="w3-button w3-green w3-padding-large">Sign Up</button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Grid -->
-        <div class="w3-row-padding" id="about">
-            <div class="w3-center w3-padding-64">
-                <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Who We Are</span>
+                <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Project</span>
             </div>
 
             <div class="w3-third w3-margin-bottom">
@@ -209,31 +179,23 @@
             </div>
         </div>
 
+
+
+     
+
         <!-- Contact -->
         <div class="w3-center w3-padding-64" id="contact">
-            <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
+            <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact</span>
         </div>
-
-        <form class="w3-container" action="/action_page.php" target="_blank">
-            <div class="w3-section">
-                <label>Name</label>
-                <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" required>
+        
+        <div class="w3-container" style="margin-left: 40%;">
+            <div class="w3-col m6 w3-xlarge">
+              <i class="fa fa-map-marker" style="width:30px"></i> Seoul, South Korea<br>
+              <i class="fa fa-phone" style="width:30px"></i> Phone: 010-9389-8415<br>
+              <i class="fa fa-envelope" style="width:30px"> </i> Email: gumagoo8@gmail.com<br>
+              <i class="fa fa-github" style="width:30px"></i><a href="https://github.com/EunaGo">https://github.com/EunaGo</a><br>
             </div>
-            <div class="w3-section">
-                <label>Email</label>
-                <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Email" required>
-            </div>
-            <div class="w3-section">
-                <label>Subject</label>
-                <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>
-            </div>
-            <div class="w3-section">
-                <label>Message</label>
-                <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
-            </div>
-            <button type="submit" class="w3-button w3-block w3-black">Send</button>
-        </form>
-
+        </div>
     </div>
 
     <!-- Footer -->
