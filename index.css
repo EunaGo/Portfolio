@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+
 html,
 body,
 h1,
@@ -51,6 +53,7 @@ h4 {
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .skils-content {
@@ -61,5 +64,28 @@ h4 {
     background-size: cover;
     background-repeat: no-repeat;
     margin-right: 2rem;
+    font-size: 18px;
+    font-weight: 600;
     /* box-shadow: 0 3px 6px rgba(0,0,0,.2), 0 3px 6px rgba(0,0,0,.2); */
+}
+
+.profile {
+    margin-left: 30%;
+    width: 300px;
+    height: 300px;
+    border-radius: 70%;
+    overflow: hidden;
+}
+
+.introduce-content {
+    border: 2px solid;
+    padding: 5%;
+    margin:5%;
+    font-size: 30px;
+}
+
+.introduce-text {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Nanum Gothic', sans-serif;
 }
